@@ -8,4 +8,4 @@ content = ['learning path', 'lab', 'course', 'quiz']
 
 @app.route('/')
 def hello_world():
-    return 'How about trying a ' + content[randint(0,2)] + ' next'
+    return 'How about trying a ' + content[randint(0,3)] + ' next'
