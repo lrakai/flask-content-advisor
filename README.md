@@ -1,2 +1,20 @@
 # flask-content-advisor
 Flask app to randomly suggest a type of content to review next
+
+# Run in Container
+docker run --name advisor -p 80:5000 flask-content-advisor
+
+# Run Out of Container
+[Ensure Flask is installed](http://flask.pocoo.org/docs/0.12/installation/#installation "Flask Installation") and check the instructions for your operating system
+
+## Mac/Linux
+```shell
+export FLASK_APP=src/app.py
+flask run
+```
+
+## Windows
+```shell
+set FLASK_APP=src/app.py
+flask run
+```
