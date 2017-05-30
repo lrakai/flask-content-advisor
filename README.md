@@ -21,9 +21,10 @@ flask run
 
 # Infrastructure
 An Azure Resource Manager template is included to provision a Linux virtual machine if you prefer to use a machine in the cloud for working with Docker. Enter the following commands bootstrap the machine:
-```
+```shell
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum makecache fast
 sudo yum -y install docker-ce
-sudo systemctl start docker```
+sudo systemctl start docker
+```
